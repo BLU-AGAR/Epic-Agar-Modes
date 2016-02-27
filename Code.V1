@@ -1,0 +1,33 @@
+// ==UserScript==
+// @name         EpicAgarMods V1
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  Awsome Mod for agar.io!
+// @author       Way Way
+// @match        http://agar.io/
+// @require      http://pastebin.com/raw/QrMULMQV
+// @run-at       document-start
+// @grant        none
+// ==/UserScript==
+
+
+window.onload = function() {
+    
+    //Text Replace
+    $("h2").replaceWith("<h2>Epic Agar Modes</h2>");
+    
+    //Zoom
+    window.agar.minScale = -30;
+    
+    //Grid
+    window.agar.drawGrid = false;
+    
+    //Show mass
+    setShowMass(true);
+    
+    //Dark Mode
+    setDarkTheme(true);
+    
+    //Acid Mode Part(Copy Code and paste below!): setAcid(true);
+    
+}
